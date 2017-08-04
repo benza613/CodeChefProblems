@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace CodeChefProblems
 {
-    class Program
+    class LOSTMAX
     {
         static void Main(string[] args)
         {
+            //take total number of test cases
             int n = Convert.ToInt32(Console.ReadLine());
 
+            //take a multi dimensional array of size total number of test cases and store
             int[][] a = new int[n][];
             for (int a_i = 0; a_i < n; a_i++)
             {
@@ -19,6 +21,7 @@ namespace CodeChefProblems
                 a[a_i] = Array.ConvertAll(a_temp, Int32.Parse);
             }
 
+            //and process each test case and give result
             for (int i = 0; i < n; i++)
             {
                 int numToRemove = a[i].Length-1;
